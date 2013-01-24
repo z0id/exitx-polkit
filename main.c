@@ -34,9 +34,9 @@
 #define SHUTDOWN_HALT		3
 
 #define LOGOUT_CMD    "/usr/bin/openbox --exit"
-#define HIBERNATE_CMD   "dbus-send --system --print-reply --dest='org.freedesktop.UPower' /org/freedesktop/UPower org.freedesktop.UPower.Hibernate"
-#define REBOOT_CMD   "dbus-send --system --print-reply --dest='org.freedesktop.ConsoleKit' /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Restart"
-#define POWEROFF_CMD  "dbus-send --system --print-reply --dest='org.freedesktop.ConsoleKit' /org/freedesktop/ConsoleKit/Manager org.freedesktop.ConsoleKit.Manager.Stop"
+#define HIBERNATE_CMD   "systemctl hibernate"
+#define REBOOT_CMD   "systemctl reboot"
+#define POWEROFF_CMD  "systemctl poweroff"
 
 typedef struct _XfsmFadeout XfsmFadeout;
 typedef struct _FoScreen FoScreen;
